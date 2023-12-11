@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFF0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.e_learn.controller.HelloController">
+    <AnchorPane prefHeight="400.0" prefWidth="161.0" style="-fx-background-color: black;">
+        <ImageView fitHeight="258.0" fitWidth="181.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../../../images/Logo.png" />
+        </ImageView>
+    </AnchorPane>
+    <TextField fx:id="userText" layoutX="211.0" layoutY="157.0" prefHeight="25.0" prefWidth="305.0" promptText="Username" />
+    <Button layoutX="333.0" layoutY="297.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: black;" text="Login" textFill="WHITE">
+        <font>
+            <Font name="Lucida Fax Regular" size="15.0" />
+        </font>
+    </Button>
+    <Text fill="#010107" layoutX="211.0" layoutY="86.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" text="Login">
+        <font>
+            <Font name="Copperplate Gothic Bold" size="56.0" />
+        </font>
+    </Text>
+    <PasswordField fx:id="passText" layoutX="211.0" layoutY="236.0" prefHeight="25.0" prefWidth="305.0" promptText="Password" />
+    <Text layoutX="213.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+        <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+        </font>
+    </Text>
+    <Text layoutX="213.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+        <font>
+            <Font name="Franklin Gothic Medium" size="16.0" />
+        </font>
+    </Text>
+    <Hyperlink layoutX="369.0" layoutY="261.0" text="Forgotten your password?" />
+    <Text layoutX="232.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ?">
+        <font>
+            <Font size="17.0" />
+        </font>
+    </Text>
+    <Hyperlink fx:id="sign1" layoutX="417.0" layoutY="347.0" onAction="#sign" text="Sign Up">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Hyperlink>
+</AnchorPane>
